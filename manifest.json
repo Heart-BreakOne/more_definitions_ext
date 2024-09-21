@@ -1,0 +1,19 @@
+{
+	"manifest_version": 3,
+	"name": "More Definitions",
+	"version": "0.0.1",
+	"description": "Automatically expand the \"More Definitions\" button on Google's word definition search so you don't have to",
+	"icons": {
+		"128": "icon.png"
+	},
+	"content_scripts": [
+		{
+		   "js": [
+			  "content_script.js"
+		   ],
+		   "matches": [
+			  "https://www.google.com/*"
+		   ]
+		}
+	 ]
+}
